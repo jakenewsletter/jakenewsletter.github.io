@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>JAKE Newsletter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
       margin: 0;
@@ -10,9 +11,10 @@
       background-size: cover;
       font-family: "Verdana", sans-serif;
     }
+
     .container {
       width: 80%;
-      max-width: 900px;
+      max-width: 900px;       /* keeps desktop width */
       margin: 100px auto;
       background-color: rgba(255, 255, 255, 0.95);
       padding: 30px;
@@ -20,60 +22,90 @@
       box-shadow: 5px 5px 0 #000000;
       text-align: center;
     }
+
     h1 {
       color: #116600;
       text-shadow: 1px 1px #000000;
+      font-size: 28px;
     }
+
     p {
       color: #333333;
       font-size: 16px;
       line-height: 1.5;
     }
-a {
-  display: inline-block;
-  margin-top: 30px;
-  margin-bottom: 15px;
-  padding: 20px 40px;     /* bigger button: more padding */
-  background-color: #226600;
-  color: #ffffff;
-  text-decoration: none;
-  border: 1px solid #000;
-  font-weight: bold;       /* bold text */
-  font-size: 20px;         /* slightly larger text */
-  border-radius: 8px;      /* optional: rounded corners */
-}
-a:hover {
-  background-color: #11cc00;
-  color: #000;
-}
+
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      padding: 20px 40px;
+      background-color: #226600;
+      color: #ffffff;
+      text-decoration: none;
+      border: 1px solid #000;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 8px;
+    }
+
+    a:hover {
+      background-color: #11cc00;
+      color: #000;
+    }
+
     marquee {
       color: #2B73B3;
       font-weight: bold;
       margin-top: 10px;
     }
+
     .bottom-image {
       margin-top: 20px;
       width: 100px;
       height: auto;
     }
+
+    /* Mobile adjustments */
+    @media (max-width: 600px) {
+      .container {
+        width: 90%;          /* shrink container on mobile */
+        margin: 20px auto;
+        padding: 15px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 14px;
+      }
+      a {
+        font-size: 16px;
+        padding: 15px 25px;
+      }
+      .bottom-image {
+        width: 50px;
+      }
+      h1 img {
+        width: 30px;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1><img src="https://blob.gifcities.org/gifcities/4I6O2SI62OAS3K7A4Q2D52NWMUWXAHFG.gif" alt="Guitar bro" style="width:40px; height:auto; vertical-align:middle;"> Welcome to JAKE Newsletter! <img src="https://blob.gifcities.org/gifcities/4I6O2SI62OAS3K7A4Q2D52NWMUWXAHFG.gif" alt="Guitar bro" style="width:40px; height:auto; vertical-align:middle;">
-	</h1>
+    <h1>
+      <img src="https://blob.gifcities.org/gifcities/4I6O2SI62OAS3K7A4Q2D52NWMUWXAHFG.gif" alt="Guitar bro" style="width:40px; height:auto; vertical-align:middle;">
+      Welcome to JAKE Newsletter!
+      <img src="https://blob.gifcities.org/gifcities/4I6O2SI62OAS3K7A4Q2D52NWMUWXAHFG.gif" alt="Guitar bro" style="width:40px; height:auto; vertical-align:middle;">
+    </h1>
     <p>Find all the best events happening on the Central Coast without the need for social media. JAKE is a volunteer organization dedicated to promoting local music and arts. We hope you enjoy!</p>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWC3SWHPCIvY4l01YDZRfZ5NHjoEOqasehuR5HIyM6oiAhFg/viewform?usp=sharing&ouid=103581876607240545082">Subscribe Here!</a>
     <hr>
     <marquee behavior="scroll" scrolldelay="60">
-  HATE SOCIAL MEDIA? LOVE MUSIC? JAKE MAY BE RIGHT FOR YOU!
-</marquee>
-	<img src="https://blob.gifcities.org/gifcities/2KKE6U7CKGUT7V4IFSOKNLAPNAQFNC6C.gif" class="bottom-image">
+      HATE SOCIAL MEDIA? LOVE MUSIC? JAKE MAY BE RIGHT FOR YOU!
+    </marquee>
+    <img src="https://blob.gifcities.org/gifcities/2KKE6U7CKGUT7V4IFSOKNLAPNAQFNC6C.gif" class="bottom-image">
   </div>
 </body>
 </html>
-
-
-
-
-

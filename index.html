@@ -67,29 +67,30 @@
     }
 
     /* Mobile adjustments */
-    @media (max-width: 600px) {
-      .container {
-        width: 90%;          /* shrink container on mobile */
-        margin: 20px auto;
-        padding: 15px;
-      }
-      h1 {
-        font-size: 22px;
-      }
-      p {
-        font-size: 14px;
-      }
-      a {
-        font-size: 16px;
-        padding: 15px 25px;
-      }
-      .bottom-image {
-        width: 50px;
-      }
-      h1 img {
-        width: 30px;
-      }
-    }
+@media (max-width: 600px) {
+  .container {
+    width: 90%;            /* still mostly full-width */
+    max-width: 500px;       /* optional: cap the container on small screens */
+    margin: 20px auto;
+    padding: 20px;          /* more padding so text doesn’t touch edges */
+  }
+  h1 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 14px;
+  }
+  a {
+    font-size: 16px;
+    padding: 15px 25px;
+  }
+  .bottom-image {
+    width: 50px;
+  }
+  h1 img {
+    width: 30px;
+  }
+}
   </style>
 </head>
 <body>
@@ -109,3 +110,4 @@
   </div>
 </body>
 </html>
+

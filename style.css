@@ -37,21 +37,33 @@ body {
       line-height: 1.5;
     }
 a.button {
-  display: inline-block;
-  margin-top: 20px;
-  margin-bottom: 5px;
-  padding: 20px 40px;
+  display: block;                  /* stack vertically */
+  margin: 20px auto;               /* space between buttons, centered */
+  padding: 20px 15px;
   background-color: #226600;
   color: #ffffff;
   text-decoration: none;
   border: 1px solid #000;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
   border-radius: 8px;
+  width: 230px;                /* keeps them tidy */
 }
 a.button:hover {
   background-color: #11cc00;
   color: #000;
+}
+a.button:first-of-type {
+  margin-top: 30px;          /* bigger gap above Subscribe Here! */
+}
+a.button.whyjake {
+  font-size: 16px;
+  padding: 12px 0px;
+  width: 160px;
+  margin-bottom: 30px;
+}
+a.button.whyjake:hover {
+  background-color: #888888;
 }
 a {
   color: #0000ee;       /* default blue */

@@ -50,7 +50,7 @@ a.button {
   width: 230px;                /* keeps them tidy */
 }
 a.button:hover {
-  background-color: #11cc00;
+  background-color: #36A300;
   color: #000;
 }
 a.button:first-of-type {
@@ -63,7 +63,8 @@ a.button.whyjake {
   margin-bottom: 30px;
 }
 a.button.whyjake:hover {
-  background-color: #888888;
+  background-color: #36A300
+  color: #000;
 }
 a {
   color: #0000ee;       /* default blue */

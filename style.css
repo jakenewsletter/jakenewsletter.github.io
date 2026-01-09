@@ -18,7 +18,7 @@ body {
     }
 
     .logo {
-      width: 500px; /* Desktop size */
+      width: 600px; /* Desktop size */
       height: auto;
       margin-top: 20px;
       margin-bottom: 20px
@@ -112,4 +112,122 @@ a {
   h1 img {
     width: 30px;
   }
+}
+/* softer dividers */
+.soft-hr{
+  border: 0;
+  height: 1px;
+  background: rgba(0,0,0,0.25);
+  margin: 18px 0;
+}
+
+/* optional: make the guitar gifs consistent */
+.guitar-gif{
+  width: 40px;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* two-column layout (wider sidebar) */
+.two-col{
+  display: grid;
+  grid-template-columns: 320px 1fr; /* bigger sidebar */
+  gap: 18px;
+  margin-top: 10px;
+  text-align: left;
+  align-items: start;
+}
+
+/* sidebar styling (less harsh) */
+.sidebar{
+  background: rgba(255,255,255,0.95);
+  padding: 12px;
+  border: 1px solid rgba(0,0,0,0.25);
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.25);
+}
+
+.sidebar-title{
+  text-align: center;
+  font-size: 22px;
+  margin: 10px 0 14px 0;
+  color: #116600;
+  text-shadow: 1px 1px rgba(0,0,0,0.2);
+}
+
+/* big vertical thumbnail cards */
+.thumb-card{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.25);
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.18);
+  margin-bottom: 12px;
+  padding: 10px;
+}
+
+.thumb-card img{
+  width: 100%;
+  height: auto;            /* full vertical thumbnail */
+  display: block;
+  border: 1px solid rgba(0,0,0,0.25);
+  background: #fff;
+}
+
+.thumb-caption{
+  text-align: center;
+  margin-top: 8px;
+  line-height: 1.2;
+}
+
+.thumb-card:hover{
+  outline: 2px dotted rgba(0,0,0,0.6);
+}
+
+/* push archive link to the bottom of the sidebar */
+.sidebar-spacer{ height: 10px; }
+.archive-link{
+  margin-top: 8px;
+  padding-top: 10px;
+  border-top: 1px dashed rgba(0,0,0,0.35);
+  text-align: center;
+}
+
+/* main column box softer too */
+.maincol{
+  background: rgba(255,255,255,0.95);
+  padding: 12px;
+  border: 1px solid rgba(0,0,0,0.25);
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.25);
+}
+
+.chat-title{
+  text-align: center;
+  font-size: 22px;
+  margin: 10px 0 14px 0;
+  color: #116600;
+  text-shadow: 1px 1px rgba(0,0,0,0.2);
+}
+
+/* chatbox container */
+.shoutbox-frame{
+  border: 2px solid rgba(0,0,0,0.25);
+  background: #dff2df; /* light green */
+  padding: 12px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.25) inset;
+}
+
+/* mobile: stack */
+@media (max-width: 760px){
+  .two-col{
+    grid-template-columns: 1fr;
+  }
+}
+/* archive button: same style as main buttons, smaller */
+a.button.archive-button{
+  width: 90%;
+  font-size: 18px;
+  padding: 8px 6px;
+  margin: 10px auto 14px auto;
+  border-radius: 6px;
 }
